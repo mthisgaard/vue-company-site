@@ -5,7 +5,12 @@
 .page {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-
+  padding: 32px 160px;
+  color: white;
   font-weight: normal;
+}
+
+h1 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 32px;
 }

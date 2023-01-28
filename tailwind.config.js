@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./src/views/**/*.{html,js,vue,ts}",
@@ -9,7 +10,14 @@ module.exports = {
     "./src/components/**/*.{html,js,vue,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        kanit: ['Kanit', 'sans-serif'],
+      },
+      colors: {
+        sea: '#409db9',
+      },
+    },
   },
   plugins: [],
-};
+}
