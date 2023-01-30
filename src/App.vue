@@ -1,29 +1,41 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
-import Navbar from '@/components/Navbar.vue'
+import Navbar from "@/components/Navbar.vue";
 </script>
 
 <template>
   <div class="content">
     <Navbar />
     <div class="page">
-      <RouterView/>
+      <RouterView />
     </div>
   </div>
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-		xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
-		<defs>
-			<linearGradient id="bg">
-				<stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.06)"></stop>
-				<stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
-				<stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
-			</linearGradient>
-			<path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+  <svg
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px"
+    y="0px"
+    width="100%"
+    height="100%"
+    viewBox="0 0 1600 850"
+    preserveAspectRatio="xMidYMax slice"
+  >
+    <defs>
+      <linearGradient id="bg">
+        <stop offset="0%" style="stop-color: #07393C"></stop>
+        <stop offset="50%" style="stop-color: #2C666E"></stop>
+        <stop offset="100%" style="stop-color: #629677"></stop>
+      </linearGradient>
+      <path
+        id="wave"
+        fill="url(#bg)"
+        d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
 	s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
-		</defs>
-		<g>
-			<use xlink:href='#wave' opacity=".3">
-				<animateTransform
+    </defs>
+    <g>
+      <use xlink:href="#wave" opacity=".3">
+        <animateTransform
           attributeName="transform"
           attributeType="XML"
           type="translate"
@@ -32,10 +44,11 @@ import Navbar from '@/components/Navbar.vue'
           values="270 230; -334 180; 270 230"
           keyTimes="0; .5; 1"
           keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
-          repeatCount="indefinite" />
-			</use>
-			<use xlink:href='#wave' opacity=".6">
-				<animateTransform
+          repeatCount="indefinite"
+        />
+      </use>
+      <use xlink:href="#wave" opacity=".6">
+        <animateTransform
           attributeName="transform"
           attributeType="XML"
           type="translate"
@@ -44,10 +57,11 @@ import Navbar from '@/components/Navbar.vue'
           values="-270 230;243 220;-270 230"
           keyTimes="0; .6; 1"
           keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
-          repeatCount="indefinite" />
-			</use>
-			<use xlink:href='#wave' opacty=".9">
-				<animateTransform
+          repeatCount="indefinite"
+        />
+      </use>
+      <use xlink:href="#wave" opacty=".9">
+        <animateTransform
           attributeName="transform"
           attributeType="XML"
           type="translate"
@@ -56,30 +70,31 @@ import Navbar from '@/components/Navbar.vue'
           values="0 230;-140 200;0 230"
           keyTimes="0; .4; 1"
           keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
-          repeatCount="indefinite" />
-			</use>
-		</g>
-	</svg>
+          repeatCount="indefinite"
+        />
+      </use>
+    </g>
+  </svg>
 </template>
 
 <style scoped>
-  * {
-		padding: 0;
-		margin: 0;
-	}
-	svg {
-		position: absolute;
-		top: 0;
-		left: 0;
-    width: 100%;
-    height: 100%;
-		box-sizing: border-box;
-		display: block;
-		background-color: #0e4166;
-    background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
-	}
-  .content {
-    position: relative;
-    z-index: 1;
-  }
+* {
+  padding: 0;
+  margin: 0;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+  background-color: #f4eded;
+  background-image: linear-gradient(to bottom, #c0b6b6, #F4EDED);
+}
+.content {
+  position: relative;
+  z-index: 1;
+}
 </style>

@@ -11,7 +11,7 @@ const showMenu = ref(false);
     <div class="font-kanit">
       <nav class="container px-6 py-6 mx-auto md:flex md:justify-between md:items-center">
         <div class="flex items-center justify-between">
-          <router-link to="/" class="text-xl text-white md:text-2xl hover:text-sea">
+          <router-link to="/" class="drop-shadow-xl text-xl text-white md:text-2xl hover:text-sea">
             Company Name
           </router-link>
           <!-- Mobile menu button -->
@@ -29,13 +29,13 @@ const showMenu = ref(false);
           :class="showMenu ? 'flex' : 'hidden'"
           class="flex-col fixed right-6 items-end mt-4 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0"
         >
-          <li class="text-sm text-white hover:text-sea">
+          <li class="drop-shadow-xl text-sm text-white hover:text-sea">
             <RouterLink to="/services">Services</RouterLink>
           </li>
-          <li class="text-sm text-white hover:text-sea">
+          <li class="drop-shadow-xl text-sm text-white hover:text-sea">
             <RouterLink to="/about">About</RouterLink>
           </li>
-          <li class="text-sm text-white hover:text-sea">
+          <li class="drop-shadow-xl text-sm text-white hover:text-sea">
             <RouterLink to="/contact">Contact</RouterLink>
           </li>
         </ul>
@@ -43,3 +43,7 @@ const showMenu = ref(false);
     </div>
   </div>
 </template>
+
+
+
+
