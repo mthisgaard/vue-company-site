@@ -15,7 +15,7 @@ module.exports = {
         kanit: ['Kanit', 'sans-serif'],
       },
       colors: {
-        sea: '#409db9',
+        sea: '#07393C',
       },
     },
   },
